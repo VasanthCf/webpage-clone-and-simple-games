@@ -1,1 +1,1 @@
-# webpage-clone-and-simple-games
+# beginner projects
