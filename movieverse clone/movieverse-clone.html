@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>movieverse</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="css/web box model.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/6fcd1b0163.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- HEADER -->
+
+  <body>
+    <header>
+      <div class="top1">
+        <h1>
+          <a href="#">
+            <img
+              src="https://themoviesverse.com/wp-content/uploads/2020/09/moviesflix-moviesflixpro-1.png"
+            />
+          </a>
+        </h1>
+      </div>
+
+      <div class="searchbox">
+        <form method="get">
+          <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="What are you looking for?"
+          />
+          <button type="submit" id="sbutton">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="headsider">
+        <a href="#"><span id="span1">Bollywood</span></a>
+        <a href="#"><span id="span2">AnimeFlix</span></a>
+      </div>
+    </header>
+
+    <div class="nav">
+      <ul>
+        <li class="border">
+          <a href="#1" id="current"
+            ><img
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/1f3e0.svg"
+              class="nav-img"
+            />
+            HOME
+          </a>
+        </li>
+        <li class="border">
+          <a href="#1"
+            ><img
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/1f3ac.svg"
+              class="nav-img" />MOVIES <i class="fas fa-sort-down"></i
+          ></a>
+          <ul class="subul">
+            <li><a href="#2">LATEST RELEASED</a></li>
+            <li><a href="#2">HINDI MOVIES</a></li>
+            <li><a href="#2">DUAL AUDIO</a></li>
+            <li><a href="#2">ENGLISH MOVIES</a></li>
+            <li><a href="#2">ASAIN MOVIES</a></li>
+            <li><a href="#2">HOLLYWOOD</a></li>
+            <li><a href="#2">ADULT MOVIES</a></li>
+            <li><a href="#2">HACKING MOVIES</a></li>
+            <li><a href="#2">MULTI MOVIES</a></li>
+          </ul>
+        </li>
+        <li class="border">
+          <a href="#1"
+            ><img
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/1f517.svg"
+              class="nav-img"
+              alt="🔗" />GENRE<i class="fas fa-sort-down"></i
+          ></a>
+          <ul class="subul">
+            <li><a href="#2">ACTION</a></li>
+            <li><a href="#2">ADVENTURE</a></li>
+            <li><a href="#2">ANIMATED</a></li>
+            <li><a href="#2">COMEDY</a></li>
+            <li><a href="#2">CRIME</a></li>
+            <li><a href="#2">FANTASY</a></li>
+            <li><a href="#2">HORRER</a></li>
+            <li><a href="#2">MYSTERY</a></li>
+            <li><a href="#2">ROMANCE</a></li>
+            <li><a href="#2">SCI-FI</a></li>
+            <li><a href="#2">THRILLER</a></li>
+          </ul>
+        </li>
+        <li class="border">
+          <a href="#1"
+            ><img
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/2620.svg"
+              class="nav-img"
+              alt="☠" />QUALITY<i class="fas fa-sort-down"></i
+          ></a>
+          <ul class="subul">
+            <li><a href="#2">480P</a></li>
+            <li><a href="#2">720P</a></li>
+            <li><a href="#2">1080P</a></li>
+            <li><a href="#2">4K ULTRA HD</a></li>
+            <li><a href="#2">300MB</a></li>
+            <li><a href="#2">500MB</a></li>
+            <li><a href="#2">700MB</a></li>
+            <li><a href="#2">900MB</a></li>
+            <li><a href="#2">1GB</a></li>
+          </ul>
+        </li>
+        <li class="border">
+          <a href="#1"
+            ><img
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/1f4c5.svg"
+              class="nav-img"
+              alt="📅"
+              alt="" />YEAR<i class="fas fa-sort-down"></i
+          ></a>
+          <ul class="subul">
+            <li><a href="#2">2021</a></li>
+            <li><a href="#2">2020</a></li>
+            <li><a href="#2">2019</a></li>
+            <li><a href="#2">2018</a></li>
+            <li><a href="#2">2017</a></li>
+            <li><a href="#2">2016</a></li>
+            <li><a href="#2">2010-2015</a></li>
+            <li><a href="#2">2005-2010</a></li>
+            <li><a href="#2">2000-2005</a></li>
+            <li><a href="#2">1990-2000</a></li>
+          </ul>
+        </li>
+        <li class="border">
+          <a href="#1"
+            ><img
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/1f4fa.svg"
+              class="nav-img"
+              alt="📺" />TV SHOWS<i
+              class="fas fa-sort-down"
+              style="color: white"
+            ></i
+          ></a>
+          <ul class="subul">
+            <li><a href="#2">ACTION SERIES</a></li>
+            <li><a href="#2">ADVENTURE SERIES</a></li>
+            <li><a href="#2">ANIMATED SERIES</a></li>
+            <li><a href="#2">COMEDY SERIES</a></li>
+            <li><a href="#2">CRIME SERIES</a></li>
+            <li><a href="#2">DRAMA SERIES</a></li>
+            <li><a href="#2">HORRER SERIES</a></li>
+          </ul>
+        </li>
+        <li class="border">
+          <a href="#1"
+            ><img
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/1f310.svg"
+              class="nav-img"
+              alt="🌐" />WEB SERIES<i class="fas fa-sort-down"></i
+          ></a>
+          <ul class="subul">
+            <li><a href="#2">AMAZON PRIME VIDEO</a></li>
+            <li><a href="#2">HINDI DUBBED</a></li>
+            <li><a href="#2">NETFLIX</a></li>
+            <li><a href="#2">ENGLISH</a></li>
+            <li><a href="#2">HULU</a></li>
+            <li><a href="#2">THE CW</a></li>
+          </ul>
+        </li>
+        <li class="border">
+          <a href="#1"> BOLLYWOOD<i class="fas fa-sort-down"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="transparent">
+      <div><a href="#1">Home</a></div>
+      <div><i class="fas fa-angle-double-right" id="angle"></i></div>
+      <div><a href="#1"></a></div>
+      <div>
+        <i
+          class="fas fa-angle-double-right"
+          style="visibility: hidden"
+          id="angle"
+        ></i>
+      </div>
+      <div><a href="#1"> </a></div>
+    </div>
+
+    <!-- CENTER -->
+
+    <div class="center">
+      <a href="#3"><i class="fab fa-telegram"></i>JOIN TELEGRAM</a>
+      <a href="#3">Dual audio</a>
+      <a href="#3">Web Series</a>
+      <a href="#3">18+ Movies</a>
+      <a href="#3">300MB Movies</a>
+      <a href="#3">480p Movies</a>
+      <a href="#3">720p Movies</a>
+      <a href="#3">1080p Movies</a>
+      <a href="#3">Hindi Series</a>
+      <a href="#3">YouTube</a>
+    </div>
+
+    <div class="main">
+      <article class="c1">
+        <a href="#4">
+          <div class="pic1">
+            <img
+              src="https://themoviesverse.com/wp-content/uploads/Download-Free-Guy-2021-HQ-Fan-Dub-Hindi-English-200x300-1.png"
+              width="200"
+              height="300"
+            />
+
+            <h1>
+              Download Free Guy (2021) [HQCam Fan Dub] (Hindi-English) || 720p
+              [1GB]
+            </h1>
+          </div>
+        </a>
+      </article>
+      <article class="c1">
+        <a
+          href="https://moviesverse.pro/download-lucifer-season-1-6-dual-audio-hindi-english-720p-hevc-web-hd-250mb/"
+        >
+          <div class="pic1">
+            <img
+              src="https://cdn.statically.io/img/moviesverse.pro/f=auto/wp-content/uploads/2021/09/MV5BNDJjMzc4NGYtZmFmNS00YWY3LThjMzQtYzJlNGFkZGRiOWI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg"
+              width="200"
+              height="300"
+            />
+
+            <h1>
+              Download Lucifer (Season 1 – 6) Dual Audio {Hindi-English} 720p
+              HEVC WeB-HD [250MB]
+            </h1>
+          </div>
+        </a>
+      </article>
+      <article class="c1">
+        <a href="#4">
+          <div class="pic1">
+            <img
+              src="https://cdn.statically.io/img/moviesverse.pro/f=auto/wp-content/uploads/2021/09/MV5BNDJkYzY3MzMtMGFhYi00MmQ4LWJkNTgtZGNiZWZmMTMxNzdlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg"
+              width="200"
+              height="300"
+            />
+
+            <h1>
+              Download Money Heist (Season 1 – 5) Dual Audio {Hindi-English}
+              480p [120MB] || 720p WeB-HD [350MB]
+            </h1>
+          </div>
+        </a>
+      </article>
+      <article class="c1">
+        <a href="#4">
+          <div class="pic1">
+            <img
+              src="https://cdn.statically.io/img/moviesverse.pro/f=auto/wp-content/uploads/2021/09/MV5BMDU4MWViOGItZGJjYi00YjczLTk1YmMtY2ZmNmY4YTllNDA0XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg"
+              width="200"
+              height="300"
+            />
+
+            <h1>
+              Download Netflix Jupiter’s Legacy (Season 1) {Hindi-English}
+              WeB-DL 480p [160MB] || 720p [350MB] || 1080p [1GB
+            </h1>
+          </div>
+        </a>
+      </article>
+      <article class="c1">
+        <a href="#4">
+          <div class="pic1">
+            <img
+              src="https://cdn.statically.io/img/moviesverse.pro/f=auto/wp-content/uploads/2021/09/MV5BZjgyMzFiMDgtNWNmMS00ZDEyLTkzYzgtMjMzZjk4YjhjZWUxXkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_SX300.jpg"
+              width="200"
+              height="300"
+            />
+
+            <h1>
+              Download 18+ Netflix Sex Education (Season 1-3) Dual Audio
+              {Hindi-English} 720p WeB-DL HD [350Mb]
+            </h1>
+          </div>
+        </a>
+      </article>
+      <article class="c1">
+        <a href="#4">
+          <div class="pic1">
+            <img
+              src="https://cdn.statically.io/img/moviesverse.pro/f=auto/wp-content/uploads/2021/09/MV5BNGJiMzBlY2ItZTRjNS00OWFiLWI4YmUtZjVlMmY4OWFhMTIxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg"
+              width="200"
+              height="300"
+            />
+
+            <h1>
+              Download All My Life (2020) [Hindi Fan Voice Over] (Hindi-English)
+              || 720p [1GB]
+            </h1>
+          </div>
+        </a>
+      </article>
+      <article class="c1">
+        <a href="#4">
+          <div class="pic1">
+            <img
+              src="https://cdn.statically.io/img/moviesverse.pro/f=auto/wp-content/uploads/2021/09/MV5BMDU0ZDkwMzktZDA0MC00MTc5LWE1MzEtYzg2MTU5ZWE4MTU1XkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_SX300.jpg"
+              width="200"
+              height="300"
+            />
+
+            <h1>
+              Download Mortal Kombat Legends: Battle of the Realms (2021)
+              {English With Subtitles} 480p [250MB] || 720p [650MB] || 1080p
+              [1.53GB]
+            </h1>
+          </div>
+        </a>
+      </article>
+      <article class="c1">
+        <a href="#4">
+          <div class="pic1">
+            <img
+              src="https://cdn.statically.io/img/moviesverse.pro/f=auto/wp-content/uploads/2021/09/Download-Marvel-What-If-S01-200x300-1.jpg"
+              width="200"
+              height="300"
+            />
+
+            <h1>
+              Download Marvel What If (Season 1) [S01E06 Added] {English With
+              Subtitles} WeB-DL 480p [100MB] || 720p [250MB] || 1080p [1.4GB]
+            </h1>
+          </div>
+        </a>
+      </article>
+      <article class="c1">
+        <a href="#4">
+          <div class="pic1">
+            <img
+              src="https://themoviesverse.com/wp-content/uploads/Download-Extinct-2021-English-With-Subtitles-480p-200x300-1.jpg"
+              width="200"
+              height="300"
+            />
+
+            <h1>
+              Download Extinct (2021) {English With Subtitles} 480p [300MB] ||
+              720p [650MB] || 1080p [1.4GB]
+            </h1>
+          </div>
+        </a>
+      </article>
+      <article class="c1">
+        <a href="#4">
+          <div class="pic1">
+            <img
+              src="https://themoviesverse.com/wp-content/uploads/Download-Malignant-2021-English-720p-Web-DL-Esubs-200x300-1.jpg"
+              width="200"
+              height="300"
+            />
+
+            <h1>
+              Download Malignant (2021) {English With Subtitles} Web-DL 480p
+              [350MB] || 720p [950MB] || 1080p [2.2GB]
+            </h1>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <div class="footer">
+      <footer>
+        <a href="#5">
+          <button class="footb" name="nextPage" type="submit">1</button>
+        </a>
+        <a href="#5">
+          <button class="footb" name="nextPage" type="submit">2</button>
+        </a>
+        <a href="#5">
+          <button class="footb" name="nextPage" type="submit">3</button>
+        </a>
+        <a href="#5">
+          <button class="footb" name="nextPage" type="submit">4</button>
+        </a>
+        <a href="#5">
+          <button class="footb" name="nextPage" type="submit">5</button>
+        </a>
+        <a href="#5">
+          <button class="footb" name="nextPage" type="submit">6</button>
+        </a>
+        <a href="#5">
+          <button class="footb" name="nextPage" type="submit">...</button>
+        </a>
+        <a href="#5">
+          <button class="footb" name="nextPage" type="submit">90</button>
+        </a>
+        <a href="#5">
+          <button class="footb" name="nextPage" type="submit">NEXT</button>
+        </a>
+      </footer>
+    </div>
+    <div class="last">
+      <address>
+        &copy;VASANTH 2021 <br />
+        clone made by vasanth😎🤩✨
+      </address>
+    </div>
+  </body>
+</html>
