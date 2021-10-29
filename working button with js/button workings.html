@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>button model</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+      body {
+        background: linear-gradient(70deg, rgb(53, 218, 102), rgb(112, 255, 255));
+        width:100%;
+        height:100vh;
+        
+
+        
+        
+      }
+   
+
+      .button{
+          padding:15px 40px;
+          margin-left:100px;
+          border-radius: 20px;
+          border-style: solid;
+          font-size: 1.2rem;
+          font-weight: bolder;
+          margin-top: 40px;
+          border:none;
+
+
+      }
+      .button1{
+          margin-left: 350px;
+      }
+      .model{
+          position: absolute;
+          width:70%;
+        padding:30px 80px;
+          background-color: white;
+          font-size: 1.4rem;
+          margin-left: 220px;
+          margin-top:100px;
+          z-index: 10;
+          box-shadow: 2px 15px 30px 0px rgb(165, 165, 165);
+          
+        
+      }
+      .cross{
+          font-size: 3rem;
+          position: absolute;
+          right:30px;
+          top:6%;
+          font-weight:bolder;
+          z-index: 10;
+          border:none;
+          background-color:#fff;
+
+      }
+      .overlay{
+          position: absolute;
+          width:100%;
+          height:100%;
+          top:0;
+          left:0;
+          backdrop-filter: blur(3px);
+          z-index: 2;
+          
+          
+      }
+      .hidden{
+          display:none;
+      }
+    </style>
+  </head>
+  
+    <main>
+    <button class="button button1">click1</button>
+    <button class="button">click2</button>
+    <button class="button">click3</button>
+    <!-- <audio src="C:/Users/ELCOT/Documents/ROOT/song.mp3" controls>song</audio> -->
+
+    <div class="overlay hidden"></div>
+
+
+    <div class="model hidden">
+        <button class="cross">&times;</button>
+      <p>
+        <h1>The show modal things</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ut harum
+        voluptatum vitae eum cupiditate repudiandae quae minima, delectus neque
+        quos, nostrum et doloremque id asperiores, velit necessitatibus commodi
+        perspiciatis?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Voluptatum esse architecto minima veritatis sed cumque dolorem
+        reprehenderit possimus, deleniti modi, repellat fuga ex veniam dolorum
+        quaerat impedit magni ut soluta.
+      </p>
+    </div></main>
+    <script>
+      "use strict";
+      const showbutton=document.querySelectorAll(".button");
+      const model=document.querySelector(".model");
+      const overlay=document.querySelector(".overlay");
+      const closebutton=document.querySelector(".cross");
+      
+
+      const openmodel=function(){
+        model.classList.remove("hidden")
+        overlay.classList.remove("hidden")
+      };
+      for(let i=0;i<showbutton.length;i++){
+        showbutton[i].addEventListener("click",openmodel)
+      }
+
+      const closemodel=function(){
+        model.classList.add("hidden");
+        overlay.classList.add("hidden");
+      }
+      closebutton.addEventListener("click",closemodel);
+      overlay.addEventListener("click",closemodel);
+
+      const closeByButton=function(e){
+        if(e.key==="Escape"){
+          closemodel();
+        }
+        
+      }
+      document.addEventListener("keydown", closeByButton)
+
+
+
+      </script>
+
+    </body>
+  </body>
+</html>
