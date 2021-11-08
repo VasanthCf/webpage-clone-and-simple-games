@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(p4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: initial;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 4rem;
+  margin-top: -7%;
+  color: rgb(109, 221, 221);
+  text-transform: capitalize;
+  box-shadow: 2px 2px 7px rgb(123, 209, 190),
+    -2px -2px 7px rgba(39, 80, 194, 0.938);
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  display: flex;
+  margin-top: -20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.bigText {
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin: 3rem 2rem 0.5rem 2rem;
+  color: rgb(28, 1, 78);
+  text-shadow: 2px 2px 5px rgb(106, 194, 187);
+  box-shadow: 2px 2px 7px rgb(123, 209, 190), -2px -2px 7px rgba(39, 80, 194, 1);
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+
+.container span {
+  font-size: 1.5rem;
+  color: rgb(145, 203, 226);
+  /* box-shadow: 2px 2px 5px rgb(255, 255, 255), -2px -2px 5px rgb(80, 138, 224);
+  border-radius: 5px;
+ */
+}
+@media screen and (max-width: 700px) {
+  .bigText {
+    font-size: 2rem;
+    margin: 3rem 1rem 0.5rem 1rem;
+  }
+  .container span {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bigText {
+    font-size: 1.3rem;
+  }
+  .container span {
+    font-size: 0.5rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
+}
