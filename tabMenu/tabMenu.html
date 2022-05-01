@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab Menu</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: lightblue;
+        font-family: sans-serif;
+        margin: 0;
+        word-spacing: 5px;
+      }
+      .heading {
+        background-color: #3498db;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 15px 15px;
+      }
+      h1 {
+        text-transform: capitalize;
+      }
+      .container {
+        width: 50%;
+        height: auto;
+        position: relative;
+        margin-left: 23%;
+        margin-top: 50px;
+        background-color: #616a6b;
+        padding: 50px 30px 40px 70px;
+      }
+      p {
+        font-size: 20px;
+      }
+      .container-tab {
+        margin-left: 20px;
+      }
+      .btn {
+        width: 10rem;
+        height: 3rem;
+        margin-left: 15px;
+        background-color: #85c1e9;
+        border: none;
+        border-radius: 6px;
+        font-size: 20px;
+        text-transform: capitalize;
+        transition: 0.5s;
+      }
+      .btn:hover {
+        background-color: #3498db;
+      }
+      .operation-tab-active {
+        transform: translateY(-20px);
+        transition: all 0.5s ease;
+      }
+      .operation-content {
+        display: none;
+      }
+      .operation-content-active {
+        display: block;
+      }
+      footer{
+          background-color: rgb(49, 46, 46);
+          text-align: center;
+        padding-top:1px ;
+        padding-bottom:1px;
+        color:rgb(255, 255, 255);
+        font-style:italic;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>  <h1 class="heading">The tab changer<h1> </div>
+        <div class="container">
+          <div class="container-tab">
+            <button class="operation-tab btn operation-tab-active" data-tab=1>
+              tab
+              <span>1</span>
+            </button>
+             <button class="operation-tab btn"  data-tab=2>
+               tab
+              <span>2</span>
+            </button>
+             <button class="operation-tab btn"  data-tab=3 >
+               tab
+              <span>3</span>
+            </button>
+            
+          </div>
+          <div class="operation-content operation-content--1 operation-content-active">
+          <h1>Introduction to chromatography:
+          </h1>
+          <p>In chemical analysis, chromatography is a laboratory technique for the separation of a mixture into its components. The mixture is dissolved in a fluid solvent (gas or liquid) called the mobile phase, which carries it through a system (a column, a capillary tube, a plate, or a sheet) on which a material called the stationary phase is fixed. Because the different constituents of the mixture tend to have different affinities for the stationary phase and are retained for different lengths of time depending on their interactions with its surface sites, the constituents travel at different apparent velocities in the mobile fluid, causing them to separate. The separation is based on the differential partitioning between the mobile and the stationary phases. Subtle differences in a compound's partition coefficient result in differential retention on the stationary phase and thus affect the separation.[1]
+          </p>
+          </div>
+           <div class="operation-content operation-content--2 ">
+          <h1>history of Chromatography:
+          </h1>
+          <p>Main article: History of chromatography
+      Chromatography was first devised in Russia by the Italian-born scientist Mikhail Tsvet in 1900.[8] He developed the technique and coined the term chromatography in the first decade of the 20th century, primarily for the separation of plant pigments such as chlorophyll, carotenes, and xanthophylls. Since these components separate in bands of different colors (green, orange, and yellow, respectively) they directly inspired the name of the technique. New types of chromatography developed during the 1930s and 1940s made the technique useful for many separation processes.[9]
+      
+      Chromatography technique developed substantially as a result of the work of Archer John Porter Martin and Richard Laurence Millington Synge during the 1940s and 1950s, for which they won the 1952 Nobel Prize in Chemistry.[10] They established the principles and basic techniques of partition chromatography, and their work encouraged the rapid development of several chromatographic methods: paper chromatography, gas chromatography, and what would become known as high-performance liquid chromatography. Since then, the technology has advanced rapidly. 
+          </p>
+          </div>
+           <div class="operation-content  operation-content--3 ">
+          <h1>The chromatography terms:
+          </h1>
+          <p>Analyte – the substance to be separated during chromatography. It is also normally what is needed from the mixture.
+      Analytical chromatography – the use of chromatography to determine the existence and possibly also the concentration of analyte(s) in a sample.
+      Bonded phase – a stationary phase that is covalently bonded to the support particles or to the inside wall of the column tubing.
+      Chromatogram – the visual output of the chromatograph. In the case of an optimal separation, different peaks or patterns on the chromatogram correspond to different components of the separated mixture.
+            Chromatograph or aerograph – an instrument that enables a sophisticated separation, e.g. gas chromatographic or liquid chromatographic separation.
+      Chromatography – a physical method of separation that distributes components to separate between two phases, one stationary (stationary phase), the other (the mobile phase) moving in a definite direction.
+      Eluent (sometimes spelled eluant) – the solvent or solvent fixure used in elution chromatography and is synonymous with mobile phase.[11]
+      Eluate – the mixture of solute (see Eluite) and solvent (see Eluent) exiting the column.[11]
+      Effluent – the stream flowing out of a chromatographic column. In practise, it is used synonymously with eluate, but the term more precisely refers to the stream independent of separation taking place.[11]
+      
+          </p>
+          </div>
+        </div>
+        <footer>
+            <h3>by Vasanth@Cf</h3>
+        </footer>
+        <script lang="js/text">
+            const tabContainer=document.querySelector(".container-tab")
+const tabs=document.querySelectorAll(".operation-tab")
+const content=document.querySelectorAll(".operation-content ")
+tabContainer.addEventListener("click",function(e){
+  const clicked=e.target.closest(".operation-tab")
+  if(e.target.classList.contains("operation-tab")){
+    tabs.forEach(t=>{
+      t.classList.remove("operation-tab-active")
+      
+    })
+    clicked.classList.add("operation-tab-active")
+    console.log(clicked)
+    content.forEach(c=>{
+      c.classList.remove("operation-content-active")
+    })
+   
+ document.querySelector(`.operation-content--${clicked.dataset.tab}`).classList.add("operation-content-active")
+  }
+})
+
+
+ </script>
+
+  </body>
+</html>
