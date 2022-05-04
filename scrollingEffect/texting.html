@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        width: 100%;
+        padding: 0;
+        background-color: bisque;
+      }
+
+      .nav__links {
+        display: flex;
+        align-items: center;
+        list-style: none;
+      }
+
+      .nav__item {
+        margin-left: 4rem;
+      }
+
+      .nav__link:link,
+      .nav__link:visited {
+        font-size: 1.7rem;
+        font-weight: 400;
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        transition: all 0.3s;
+      }
+      .main {
+        width: 100%;
+        height: auto;
+      }
+
+      .section {
+        width: 100%;
+        position: relative;
+        height: 50rem;
+        background-color: #ff585f;
+        text-align: center;
+        border-bottom: 2px solid #000;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a class="nav__link" href="#section-1">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section-2">Operations</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section-3">Funds</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--btn btn--show-modal" href="#section-4"
+            >Open account</a
+          >
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--btn btn--show-modal" href="#section-5"
+            >close account</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+      <div class="section" id="section-1">
+        <h1>section-1</h1>
+      </div>
+      <div class="section" id="section-2"><h1>section-2</h1></div>
+      <div class="section" id="section-3"><h1>section-3</h1></div>
+      <div class="section" id="section-4"><h1>section-4</h1></div>
+      <div class="section" id="section-5"><h1>section-5</h1></div>
+    </div>
+    <script lang="js/text">
+
+      const allLinks=document.querySelectorAll(".nav__link")
+      const navLink=document.querySelector(".nav__links");
+
+      navLink.addEventListener("click",function(e){
+       e.preventDefault();
+        if(e.target.classList.contains("nav__link")){
+          const clicked=e.target.getAttribute("href");
+      document.querySelector(clicked).scrollIntoView({behavior:"smooth"});
+      //red color on clicked link
+          e.target.style.color="red";
+
+        }
+        // clearing the red color after 2sec
+        setTimeout(()=>{allLinks.forEach((s,i)=>{
+        if(e.target.color="red"){
+
+             s.style.color="black";
+            }
+        })},5000)
+      })
+    </script>
+  </body>
+</html>
